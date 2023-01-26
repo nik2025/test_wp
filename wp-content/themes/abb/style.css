@@ -1,0 +1,248 @@
+/*
+Theme Name: AbbTest
+Version: 1.0
+*/
+
+.site-header {
+    height: 80px;
+    padding-top: 15px;
+}
+.site-header .navbar-header {
+    flex-direction: row;
+    margin-top: 15px;
+}
+.site-header .navbar-header li {
+    margin-right: 56px;
+}
+.site-header .navbar-header li:last-child {
+    margin-right: 0;
+}
+.site-header .navbar-header li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.homepage-header .backgeound-section {
+    background-size: cover;
+    width: 100%;
+    padding: 120px 0;
+}
+.homepage-header-text {
+    padding-top: 120px;
+    padding-right: 155px;
+}
+.homepage-header-text p {
+    color: #FFFFFF;
+    font-size: 48px;
+}
+.homepage-content .page-content {
+    padding: 60px 0;
+    font-size: 18px;
+    color: #262626;
+}
+.homepage-product-section {
+    width: 100%;
+    padding: 80px 0;
+    background: #F0F0F0 0 0 no-repeat padding-box;
+}
+.homepage-product-section .product-image img {
+    margin-left: -175px;
+}
+
+.title-border-block {
+    width: 30px;
+    height: 5px;
+    background-color: #FF000F;
+    display: block;
+}
+
+.product-button button {
+    border-radius: 50px;
+    border: none;
+    background-color: #FF000F;
+    color: white;
+    font-size: 18px;
+    padding: 18px 33px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.homepage-product-section .product_description {
+    padding-top: 50px;
+}
+.homepage-product-section .product-button {
+    margin: 35px 0;
+}
+.homepage-product-section .section-title {
+    font-size: 38px;
+}
+
+.section-title .title-border-block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.latest-post {
+    margin-bottom: 25px;
+}
+.latest-post .post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.latest-post .latest-post-title {
+    color: #262626;
+    font-size: 38px;
+    padding: 22px 0 12px 0;
+}
+
+.latest-post .latest-post-readmore button {
+    background-color: #FF000F;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    padding: 18px 33px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.home-page-articles-section {
+    margin-top: 110px;
+}
+.home-page-articles-section .section-title {
+    margin-top: 55px;
+}
+.section-title {
+    font-size: 38px;
+}
+.list-post-readmore button {
+    background-color: #FF000F;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    padding: 18px 33px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.list-post-item {
+    margin-bottom: 75px;
+}
+.list-post-item .section-title {
+    margin-top: 0;
+}
+
+.site-footer {
+    background-color: #6E6E6E;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.site-footer ul.social-links {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.site-footer ul.social-links li {
+    list-style: none;
+    width: 34px;
+    height: 34px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+}
+.site-footer ul.social-links li:nth-child(1) {
+    background-image: url('assets/images/fb-icon.png');
+}
+.site-footer ul.social-links li:nth-child(2) {
+    background-image: url('assets/images/tw-icon.png');
+}
+.site-footer ul.social-links li:nth-child(3) {
+    background-image: url('assets/images/linkedin-icon.png');
+}
+.footer-navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer ul.navbar-footer {
+    flex-direction: row;
+}
+.site-footer ul.navbar-footer li {
+    margin-right: 20px;
+}
+.site-footer ul.navbar-footer li a {
+    color: white;
+    text-decoration: none;
+}
+.copyright {
+    text-align: right;
+}
+.copyright p {
+    color: white;
+    margin: 0;
+}
+
+
+
+.section-title p {
+    word-break: break-all;
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: right;
+}
+.mobile-menu span {
+    margin-top: 10px;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-image: url(assets/images/burger.png);
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-header-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .homepage-product-section .product-image img {
+        margin: 0;
+        width: 100%;
+    }
+    .post-list-image {
+        display: none;
+    }
+    .list-post-item {
+        height: 100%;
+    }
+    .list-post-item img {
+        display: none;
+    }
+    .homepage-header-text p {
+        font-size: 28px;
+    }
+    .homepage-header-text {
+        padding-right: 0;
+    }
+    .site-footer ul.navbar-footer {
+        flex-direction: column;
+    }
+    .copyright {
+        text-align: left;
+    }
+    .site-footer ul.social-links {
+        margin-top: 25px;
+        padding: 0;
+    }
+}
