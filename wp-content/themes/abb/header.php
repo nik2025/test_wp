@@ -25,6 +25,26 @@
                     <div class="mobile-menu">
                         <span></span>
                     </div>
+                    <div class="mobile-menu-container">
+                        <div class="mobile-menu-header">
+                            <div class="mobile-menu-title">
+                                <?= __('Menu' , 'abb'); ?>
+                            </div>
+                            <div class="mobile-menu-close">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-items">
+                            <?php wp_nav_menu( [
+                                'theme_location'  => 'primary_header',
+                                'container'       => 'div',
+                                'menu_class'      => 'nav navbar-nav navbar-header-mobile',
+                                'echo'            => true,
+                                'fallback_cb'     => 'wp_page_menu',
+                                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                            ] ); ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

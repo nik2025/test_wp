@@ -12,7 +12,7 @@ Version: 1.0
     margin-top: 15px;
 }
 .site-header .navbar-header li {
-    margin-right: 56px;
+    margin-right: auto;
 }
 .site-header .navbar-header li:last-child {
     margin-right: 0;
@@ -203,13 +203,63 @@ Version: 1.0
     background-image: url(assets/images/burger.png);
 }
 
-@media screen and (max-width: 1200px) {
-    .menu-header-container {
+.mobile-menu-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: white;
+    transition: 0.4s;
+    box-shadow: -2px 0px 10px 0px #dadada;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-title {
+    margin: 25px 0 0 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mobile-menu-close span {
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-image: url(assets/images/close.png);
+    display: block;
+    margin: 25px 15px 0 0;
+}
+
+.mobile-menu-items {
+    margin: 25px 0 0 25px;
+}
+ul.navbar-header-mobile li a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul.navbar-header-mobile li {
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 480px) {
+    .mobile-menu-container {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .menu-header-container .navbar-header {
         display: none;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
     body .mobile-menu {
         display: none;
     }

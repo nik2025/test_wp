@@ -20,7 +20,9 @@ add_filter( 'excerpt_more', '__return_empty_string' );
 add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css' , [], '1.0.0' );
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/jquery-3.6.3.min.js', [], '1.0.0', true );
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', [], '1.0.0', true );
+    wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/assets/js/theme.js', [], '1.0.0', true );
 } );
 
 add_action('latest_posts' , function($args)  {
